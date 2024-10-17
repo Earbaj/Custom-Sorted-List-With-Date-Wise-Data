@@ -1,5 +1,51 @@
 # Generic Date List View
 
+A Flutter package that provides a customizable list view displaying items grouped by date. This widget is ideal for applications that require displaying messages, events, or any data that can be categorized by date, such as chat messages or logs.
+
+## Usage
+
+
+2. Create a Sample Data Model You can create any model for your data. For this example, 
+   3. let’s assume you have a simple message model:
+Here's how to use the `GenericDateListView` in your Flutter app: 
+      4. 
+                    class Message {
+   4. 
+                                        final String content;
+   4. 
+                                final DateTime timestamp;
+   4. 
+                Message(this.content, this.timestamp);
+                }
+
+
+### 1. Import the Package
+
+Add the following import statement to your Dart file:
+
+```dart
+import 'package:genericlistwithdate/genericlistwithdate.dart';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Generic Date List View
+
 A Flutter package that provides a customizable list view displaying items grouped by date. 
 This widget is ideal for applications that require displaying messages, events, or any data that can 
 be categorized by date, such as chat messages or logs.
@@ -106,8 +152,8 @@ Here's a complete example for a better understanding:
 
 dart
 Copy code
-import 'package:flutter/material.dart';
-import 'package:genericlistwithdate/genericlistwithdate.dart';
+        import 'package:flutter/material.dart';
+    import 'package:genericlistwithdate/genericlistwithdate.dart';
 
 class Message {
 final String content;
@@ -119,11 +165,14 @@ Message(this.content, this.timestamp);
 class MyApp extends StatelessWidget {
 @override
 Widget build(BuildContext context) {
+
+
+
+
 List<Message> messages = [
 Message("Hello!", DateTime.now().subtract(Duration(hours: 1))),
 Message("How are you?", DateTime.now().subtract(Duration(days: 1, hours: 2))),
-Message("Goodbye!", DateTime.now().subtract(Duration(days: 2))),
-];
+Message("Goodbye!", DateTime.now().subtract(Duration(days: 2))),];
 
     return MaterialApp(
       home: Scaffold(
