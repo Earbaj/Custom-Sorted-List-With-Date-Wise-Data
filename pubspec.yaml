@@ -1,6 +1,7 @@
 name: genericlistwithdate
-description: A new Flutter project.
+description: A Flutter widget that displays a list grouped by date.
 version: 0.0.1
+repository: https://github.com/Earbaj/Custom-Sorted-List-With-Date-Wise-Data.git
 homepage:
 
 environment:
@@ -10,11 +11,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  collection:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

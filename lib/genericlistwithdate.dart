@@ -8,11 +8,11 @@ class GenericDateListView<T> extends StatelessWidget {
   final Widget Function(BuildContext, T) itemBuilder; // Custom item builder
 
   const GenericDateListView({
-    Key? key,
+    super.key,
     required this.dataList,
     required this.extractDate,
     required this.itemBuilder,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -92,7 +92,7 @@ class GenericDateListView<T> extends StatelessWidget {
 String formatDateHeader(DateTime dateTime) {
   final now = DateTime.now();
   final today = DateTime(now.year, now.month, now.day);
-  final yesterday = today.subtract(Duration(days: 1));
+  final yesterday = today.subtract(const Duration(days: 1));
   final date = DateTime(dateTime.year, dateTime.month, dateTime.day);
 
   if (date == today) {
